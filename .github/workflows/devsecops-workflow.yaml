@@ -43,7 +43,7 @@ jobs:
         with:
           ref: main
       - name: ZAP Scan
-        uses: zaproxy/action-baseline@0.13.0
+        uses: zaproxy/action-baseline@v0.13.0
         with:
           token: ${{ secrets.ISSUE_TOKEN }}
           docker_name: 'owasp/zap2docker-stable'
