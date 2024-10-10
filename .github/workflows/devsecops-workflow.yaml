@@ -43,9 +43,9 @@ jobs:
         with:
           ref: main
       - name: ZAP Scan
-        uses: zaproxy/action-baseline@v0.6.1
-        token: ${{ secrets.ISSUE_TOKEN }}
+        uses: zaproxy/action-baseline@0.13.0
         with:
+          token: ${{ secrets.ISSUE_TOKEN }}
           docker_name: 'owasp/zap2docker-stable'
           target: 'http://example.com/'
           rules_file_name: '.zap/rules.tsv'
